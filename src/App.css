@@ -1,7 +1,38 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary: hsl(47, 88%, 63%);
+  --color-secondary: hsl(0, 0%, 100%);
+  --color-gray-light: hsl(0, 0%, 42%);
+  --color-gray-dark: hsl(0, 0%, 7%);
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Figtree';
+  font-weight: 500;
+
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
