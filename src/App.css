@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf");
+  font-style: italic;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf");
+  font-style: italic;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+  font-style: normal;
+  font-weight: 800;
+}
+
 *,
 *::before,
 *::after {
@@ -17,10 +42,11 @@ html {
 
 body {
   line-height: 1.5;
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 500;
 
   min-height: 100vh;
+  background-color: var(--color-primary);
 }
 
 img {
@@ -28,11 +54,100 @@ img {
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
   hyphens: auto;
 }
+
+*:not(dialog) {
+  margin: 0;
+}
+
+/* Blog card */
+#root {
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.blog-card {
+  width: 400px;
+  padding: 2.4rem;
+  background-color: var(--color-secondary);
+
+  border-radius: 2rem;
+  border: 1px solid var(--color-gray-dark);
+
+  box-shadow: 0.8rem 0.8rem 0 var(--color-gray-dark);
+}
+
+.blog-card__image {
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 2.4rem;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.blog-card__details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.details__tag {
+  display: inline;
+  border-radius: .5rem;
+  background-color: var(--color-primary);
+  padding: .4rem 1.2rem;
+
+  & p {
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+}
+
+.details__date {
+  font-size: 1.4rem;
+}
+
+.details__heading {
+  font-size: 2.4rem;
+}
+
+.details__description {
+  font-size: 1.6rem;
+  color: var(--color-gray-light);
+}
+
+.blog-card__author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  & .author__name {
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+}
+
