@@ -5,7 +5,11 @@ function App() {
   return (
     <>
       <main>
-        <div className="blog-card-container">
+        <article
+          className="blog-card-container"
+          tabIndex={0}
+          aria-labelledby="blog-card-title"
+        >
           <div className="blog-card">
             <div className="blog-card__image">
               <img
@@ -17,8 +21,14 @@ function App() {
               <div className="blog-card__tag">
                 <p className="blog-card__tag-text">Learning</p>
               </div>
-              <p className="blog-card__date">Published 11 Mar 2026</p>
-              <h1 className="blog-card__heading">HTML & CSS foundations</h1>
+              <p>
+                <time className="blog-card__date" dateTime="2026-03-11">
+                  Published 11 Mar 2026
+                </time>
+              </p>
+              <h1 id="blog-card-title" className="blog-card__heading">
+                HTML & CSS foundations
+              </h1>
               <p className="blog-card__description">
                 These languages are the backbone of every website, defining
                 structure, content, and presentation.
@@ -33,7 +43,7 @@ function App() {
               <p className="blog-card__author-name">Greg Hooper</p>
             </div>
           </div>
-        </div>
+        </article>
       </main>
       <Attribution />
     </>
