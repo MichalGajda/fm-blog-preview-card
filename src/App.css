@@ -89,7 +89,9 @@ main {
 }
 
 .blog-card-container {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  /* width: 400px; */
   padding: 2.4rem;
 
   border-radius: 2rem;
