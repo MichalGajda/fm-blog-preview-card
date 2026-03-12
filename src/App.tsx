@@ -9,8 +9,8 @@ function App() {
           <div className="blog-card">
             <div className="blog-card__image">
               <img
-                src="illustration-article.svg"
-                alt="Colorful illustration for the atricle"
+                src="/illustration-article.svg"
+                alt="Colorful illustration for the article"
               />
             </div>
             <div className="blog-card__details">
@@ -26,7 +26,7 @@ function App() {
             </div>
             <div className="blog-card__author">
               <img
-                src="image-avatar.webp"
+                src="/image-avatar.webp"
                 alt="Picture of the author of the blog card"
                 className="blog-card__author-image"
               />
