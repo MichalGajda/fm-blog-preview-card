@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Figtree";
-  src: url("../fonts/Figtree-Italic-VariableFont_wght.ttf");
+  src: url("/fonts/Figtree-Italic-VariableFont_wght.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Figtree";
-  src: url("../fonts/Figtree-Italic-VariableFont_wght.ttf");
+  src: url("/fonts/Figtree-Italic-VariableFont_wght.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Figtree";
-  src: url("../fonts/Figtree-VariableFont_wght.ttf");
+  src: url("/fonts/Figtree-VariableFont_wght.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Figtree";
-  src: url("../fonts/Figtree-VariableFont_wght.ttf");
+  src: url("/fonts/Figtree-VariableFont_wght.ttf");
   font-style: normal;
   font-weight: 800;
 }
@@ -38,6 +38,7 @@ html {
   --color-secondary: hsl(0, 0%, 100%);
   --color-gray-light: hsl(0, 0%, 42%);
   --color-gray-dark: hsl(0, 0%, 7%);
+  --color-transparent: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -96,16 +97,40 @@ main {
   border: 1px solid var(--color-gray-dark);
 
   box-shadow: 0.8rem 0.8rem 0 var(--color-gray-dark);
+  position: relative;
+  transition: box-shadow 0.5s;
+}
+.blog-card:hover {
+  box-shadow: 0.8rem 0.8rem 0 var(--color-transparent);
+}
+.blog-card::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.4s;
+  box-shadow: 1.6rem 1.6rem 0 var(--color-gray-dark);
+}
+.blog-card:hover::after {
+  opacity: 1;
+}
+
+.blog-card:hover .blog-card__heading {
+  color: var(--color-primary);
 }
 
 .blog-card__image {
   border-radius: 1rem;
   overflow: hidden;
   margin-bottom: 2.4rem;
+}
 
-  & img {
+.blog-card__image img {
     width: 100%;
-  }
 }
 
 .blog-card__details {
@@ -116,27 +141,29 @@ main {
   margin-bottom: 2rem;
 }
 
-.details__tag {
+.blog-card__tag {
   display: inline;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: var(--color-primary);
-  padding: .4rem 1.2rem;
-
-  & p {
-    font-size: 1.4rem;
-    font-weight: 800;
-  }
+  padding: 0.4rem 1.2rem;
 }
 
-.details__date {
+.blog-card__tag-text {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.blog-card__date {
   font-size: 1.4rem;
 }
 
-.details__heading {
+.blog-card__heading {
   font-size: 2.4rem;
+  cursor: pointer;
+  transition: color 0.5s;
 }
 
-.details__description {
+.blog-card__description {
   font-size: 1.6rem;
   color: var(--color-gray-light);
 }
@@ -144,10 +171,14 @@ main {
 .blog-card__author {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  & .author__name {
-    font-size: 1.4rem;
-    font-weight: 800;
-  }
+  gap: 1.2rem;
 }
 
+.blog-card__author-image {
+  height: 3.2rem;
+}
+
+.blog-card__author-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
