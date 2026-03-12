@@ -50,6 +50,7 @@ Difference between :focus and :focus-visible pseudoclasses
 Modern CSS reset/starter
 How to make bottom footer with grid
 A nice usecase for inset property
+How to use @font-face
 
 To see how you can add code snippets, see below:
 
