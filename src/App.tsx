@@ -14,12 +14,12 @@ function App() {
             />
           </div>
           <div className="blog-card__details">
-            <div className="details__tag">
-              <p>Learning</p>
+            <div className="blog-card__tag">
+              <p className="blog-card__tag-text">Learning</p>
             </div>
-            <p className="details__date">Published 11 Mar 2026</p>
-            <h1 className="details__heading">HTML & CSS foundations</h1>
-            <p className="details__description">
+            <p className="blog-card__date">Published 11 Mar 2026</p>
+            <h1 className="blog-card__heading">HTML & CSS foundations</h1>
+            <p className="blog-card__description">
               These languages are the backbone of every website, defining
               structure, content, and presentation.
             </p>
@@ -28,9 +28,9 @@ function App() {
             <img
               src="image-avatar.webp"
               alt="Picture of the author of the blog card"
-              className="author__image"
+              className="blog-card__author-image"
             />
-            <p className="author__name">Greg Hooper</p>
+            <p className="blog-card__author-name">Greg Hooper</p>
           </div>
         </div>
       </main>
