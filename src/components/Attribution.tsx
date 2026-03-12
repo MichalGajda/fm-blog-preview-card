@@ -13,7 +13,7 @@ export default function Attribution() {
       </a>
       . Coded by&nbsp;
       <a
-        href="https://www.frontendmentor.io?ref=challenge"
+        href="https://github.com/MichalGajda/fm-blog-preview-card"
         target="_blank"
         rel="noopener noreferrer"
       >
