@@ -1,3 +1,5 @@
+import "./attribution.css"
+
 export default function Attribution() {
   return (
     <div className="attribution">
