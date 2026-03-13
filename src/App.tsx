@@ -44,7 +44,9 @@ function App() {
           </div>
         </article>
       </main>
-      <Attribution />
+      <footer>
+        <Attribution />
+      </footer>
     </>
   );
 }
