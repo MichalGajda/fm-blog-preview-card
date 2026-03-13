@@ -7,7 +7,6 @@ function App() {
       <main>
         <article
           className="blog-card-container"
-          tabIndex={0}
           aria-labelledby="blog-card-title"
         >
           <div className="blog-card">
