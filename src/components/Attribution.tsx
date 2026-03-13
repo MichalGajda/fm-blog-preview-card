@@ -1,4 +1,4 @@
-import "./attribution.css"
+import "./attribution.css";
 
 export default function Attribution() {
   return (
@@ -6,7 +6,6 @@ export default function Attribution() {
       Challenge by&nbsp;
       <a
         href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
         rel="noopener noreferrer"
       >
         Frontend Mentor
@@ -14,7 +13,6 @@ export default function Attribution() {
       . Coded by&nbsp;
       <a
         href="https://github.com/MichalGajda/fm-blog-preview-card"
-        target="_blank"
         rel="noopener noreferrer"
       >
         Michał Gajda
