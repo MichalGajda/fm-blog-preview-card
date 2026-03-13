@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/MichalGajda/fm-blog-preview-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://michalgajda.github.io/fm-blog-preview-card/)
 
 ## My process
 
@@ -41,7 +41,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-<!-- - Mobile-first workflow -->
 - [React](https://reactjs.org/) - JS library
 
 ### What I learned
@@ -78,6 +77,8 @@ instead of:
 ### Useful resources
 
 - [CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/) - CSS reset for less headaches.
+- [Landmark roles](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA11.html) - Landmark roles for accessibility
+- [Landmark HTML elements](https://developer.mozilla.org/en-US/blog/aria-accessibility-html-landmark-roles/) - Landmark HTML elements for accessibility
 
 ### AI Collaboration
 
