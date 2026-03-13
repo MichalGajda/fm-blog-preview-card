@@ -1,6 +1,9 @@
 import "./App.css";
 import Attribution from "./components/Attribution";
 
+const ARTICLE_IMAGE_SRC = `${import.meta.env.BASE_URL}illustration-article.svg`;
+const AVATAR_IMAGE_SRC = `${import.meta.env.BASE_URL}image-avatar.webp`;
+
 function App() {
   return (
     <>
@@ -13,7 +16,7 @@ function App() {
           <div className="blog-card">
             <div className="blog-card__image">
               <img
-                src="/illustration-article.svg"
+                src={ARTICLE_IMAGE_SRC}
                 alt="Colorful illustration for the article"
               />
             </div>
@@ -36,7 +39,7 @@ function App() {
             </div>
             <div className="blog-card__author">
               <img
-                src="/image-avatar.webp"
+                src={AVATAR_IMAGE_SRC}
                 alt="Picture of the author of the blog card"
                 className="blog-card__author-image"
               />
