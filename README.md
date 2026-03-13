@@ -46,11 +46,11 @@ Users should be able to:
 
 ### What I learned
 
-Difference between :focus and :focus-visible pseudoclasses
-Modern CSS reset/starter
-How to make bottom footer with grid
-A nice usecase for inset property
-How to use @font-face
+- Difference between :focus and :focus-visible pseudoclasses
+- Modern CSS reset/starter
+- How to make bottom footer with grid
+- A nice usecase for inset property
+- How to use @font-face
 
 To see how you can add code snippets, see below:
 
@@ -73,7 +73,7 @@ instead of:
 
 ### Continued development
 
-Continue using grid for easy wins.
+- Continue using grid for easy wins.
 
 ### Useful resources
 
