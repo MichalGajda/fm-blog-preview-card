@@ -36,14 +36,14 @@ function App() {
                 structure, content, and presentation.
               </p>
             </div>
-            <div className="blog-card__author">
+            <address className="blog-card__author">
               <img
                 src={AVATAR_IMAGE_SRC}
-                alt="Picture of the author of the blog card"
+                alt="Greg Hooper"
                 className="blog-card__author-image"
               />
               <p className="blog-card__author-name">Greg Hooper</p>
-            </div>
+            </address>
           </div>
         </article>
       </main>
